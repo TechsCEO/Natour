@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
+const compression = require('compression')
 
 
 const AppError = require('./errorApp');
@@ -78,6 +79,8 @@ app.use(hpp({
   ]
 }));
 
+// It Compresses responses sent to client
+app.use(compression());
 
 // Test middleware
 app.use((req, res, next) => {

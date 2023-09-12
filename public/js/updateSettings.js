@@ -11,7 +11,8 @@ export const updateData = async (data) => {
     console.log('User Name Is: ', process.env.BASE_URL);
 
     //const updateDataUrl = `${process.env.BASE_URL}/api/v1/users/updateMe`;
-    const updateDataUrl = 'http://127.0.0.1:3000/api/v1/users/updateMe';
+    // const updateDataUrl = 'http://127.0.0.1:3000/api/v1/users/updateMe';
+    const updateDataUrl = '/api/v1/users/updateMe';
     // showAlert('error', `${axios.toString()}`);
     const res = await axios({
       method: 'PATCH',
@@ -33,7 +34,8 @@ export const updateData = async (data) => {
 export const updatePassword = async (data) => {
   try {
     //const updatePasswordUrl = `${process.env.BASE_URL}/api/v1/users/updateMyPassword`;
-    const updatePasswordUrl = `http://127.0.0.1:3000/api/v1/users/updateMyPassword`;
+    //const updatePasswordUrl = `http://127.0.0.1:3000/api/v1/users/updateMyPassword`;
+    const updatePasswordUrl = `/api/v1/users/updateMyPassword`;
     const res = await axios({
       method: 'PATCH',
       url: updatePasswordUrl,
