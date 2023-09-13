@@ -7,8 +7,8 @@ const User = require('./../../models/userModel');
 const Review = require('./../../models/reviewModel');
 
 const port = 3000;
-//const mongoDbUrl = 'mongodb+srv://natourDB:Gk9UjPRGhEil1CZ8@cluster0.3yxwx4l.mongodb.net/?retryWrites=true&w=majority';
-const mongoDbUrl = 'mongodb://0.0.0.0/tours-test';
+const mongoDbUrl = 'mongodb+srv://natourDB:Gk9UjPRGhEil1CZ8@cluster0.3yxwx4l.mongodb.net/?retryWrites=true&w=majority';
+//const mongoDbUrl = 'mongodb://0.0.0.0/tours-test';
 
 mongoose.connect(mongoDbUrl/*, {
   useNewUrlParser: true,

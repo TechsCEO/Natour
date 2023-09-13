@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const Tour = require('./tourModel');
 
 // review, rating,createdAt,ref Tour, ref User
 

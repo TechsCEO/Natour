@@ -52,7 +52,7 @@ const userSchema = new mongoose.Schema({
   passwordResetExpires: Date
 });
 
-userSchema.pre('save', async function(next) {
+/*userSchema.pre('save', async function(next) {
   // If Password is actually modified!
   if (!this.isModified('password')) {
     return next();
@@ -72,7 +72,7 @@ userSchema.pre('save', function(next) {
   }
   this.passwordChanedAt = Date.now() - 1000;
   next();
-});
+});*/
 
 userSchema.pre(/^find/, function(next) {
   // "this" points to current query

@@ -15,7 +15,8 @@ const port = process.env.PORT || 3000;
 
 //const mongoDbUrl = 'mongodb+srv://natourDB:Gk9UjPRGhEil1CZ8@cluster0.3yxwx4l.mongodb.net/?retryWrites=true&w=majority';
 //const mongoDbUrl = 'mongodb+srv://natourDB:kG9UjPRGhEil1CZ8@cluster0.3yxwx4l.mongodb.net/?retryWrites=true&w=majority';
-const mongoDbUrl = 'mongodb://0.0.0.0/tours-test';
+const mongoDbUrl = 'mongodb+srv://natourDB:Gk9UjPRGhEil1CZ8@cluster0.3yxwx4l.mongodb.net/?retryWrites=true&w=majority';
+//const mongoDbUrl = 'mongodb://0.0.0.0/tours-test';
 //const offlineUrl = 'mongodb://localhost:27017/tour
 
 mongoose.connect(mongoDbUrl/*, {
@@ -23,7 +24,8 @@ mongoose.connect(mongoDbUrl/*, {
   useCreateIndex: true,
   useFindAndModify: false
 }*/).then(con => {
-  console.log('Connected Successfully!');
+  //console.log(con);
+  console.log('MongoDB Connected Successfully!');
 });
 
 
